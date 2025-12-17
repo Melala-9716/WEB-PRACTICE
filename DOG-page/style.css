@@ -1,0 +1,80 @@
+body{
+    background: rgba(222, 213, 213, 0.8);
+}   
+*{
+    margin: 0px;
+}
+*::selection{
+    background-color: aquamarine;
+}
+h5{
+    background-color: rgb(3, 3, 65);
+    color: azure;
+    font-weight: bolder;
+    font-size:large;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+    height:40px;
+}
+.page{
+   display: flex;
+   flex-direction: row;
+   gap: 100px;
+   text-transform: capitalize;
+   margin-left:40px;
+   height: 200px;
+}
+.page>.child>#name{
+    color: blue;
+
+}
+.page>.child>p{
+    max-width: 400px;
+}
+.page .page2{
+    border: 2px solid rgb(206, 62, 62);
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    background-image: url(goldenretrieverdog2.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+#list{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    margin: 40px;
+    font-size: auto;
+    text-transform: capitalize;
+}
+h4{
+    font-size: 20px;
+}
+ul li::before{
+    content:"🐕";
+}
+#end{
+    margin-left: 70px;
+    text-transform: capitalize;
+}
+footer{
+    margin-left: 90px;
+}
+a:link{
+    color: rgb(227, 102, 6);
+}
+a:hover{
+    background-color: brown;
+    color: rgb(227, 225, 231);
+}
+a:visited{
+    background-color: aqua;
+    color:rgb(160, 24, 24);
+}
+a:active{
+    background-color: rgb(12, 212, 146);
+    color: rgb(173, 206, 26);
+}
