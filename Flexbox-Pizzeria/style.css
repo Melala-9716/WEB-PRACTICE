@@ -1,0 +1,256 @@
+ *{
+        box-sizing: border-box;
+      /*  border: 1px solid white;*/  
+        margin: 0%;
+    }
+    *::selection{
+        color: black;
+        background-color: blanchedalmond;
+    }
+    body{
+        background-color: black;
+    }
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    align-items: center;
+    gap: 10px;
+    height: 50px;
+    padding: 0px;
+    position: sticky;
+    padding-left: 10px;
+    top: 0;
+    width: 100%; 
+    z-index: 1000;
+    background-color: black;
+}
+.container1>.nav:nth-child(1){
+   flex-grow: 1;
+   color: yellow;
+}
+a:link{
+    color:yellow;
+}
+a:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+a:active{
+    background-color: brown;
+    color: antiquewhite;
+}
+a:visited{
+    background-color: rgb(255, 81, 0);
+    color: aliceblue;
+}
+.intro{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url("images/pizza.jpg") no-repeat center/cover;
+    height: 600px;
+}
+.intro h1{
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+}
+.intro #u{
+    padding-left:500px;
+    color: rgb(244, 243, 241);
+    font-size: 30px;
+}
+.intro #x{
+    color: yellow;
+    font-size: 20px;
+    font-weight: bolder;
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid black;
+    margin:80px 590px;
+    padding: 10px;
+    background-color: #e07204;
+}
+.space h1{
+    padding-top: 20px ;
+    text-align: center;
+    color: yellow;
+}
+.space p{
+    text-align: center;
+    font-size: larger;
+    color: aliceblue;
+    padding: 0px 400px;
+}
+.container2{
+     display:flex;
+     flex-direction:row;
+     justify-content: center;
+     gap: 20px;
+     color: aliceblue;
+}
+.container2 .pizza{
+    color: rgb(197, 205, 211);
+}
+.container2>.pizza>h2{
+    color: rgb(241, 139, 7);
+}
+.special{
+    padding: 40px;
+}
+.special>h3{
+color: aliceblue;
+}
+h1{
+    padding:10px 40px;
+    color: orange;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+}
+.list>.special1{
+    color: aliceblue;
+
+}
+.list>.special1>h3{
+    color: rgb(16, 225, 16);
+}
+.list>img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+ .list1{
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+ }
+ .list1>.special2{
+    color: aliceblue;
+ }
+.list1>.special2>h3{
+    color: rgb(16, 225, 16);
+}   
+.list1>img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.list2{
+     display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+}
+.list2>.special3{
+    color: rgb(232, 237, 241);
+}
+.list2>.special3>h3{
+    color: rgb(16, 225, 16);
+}
+.list2>img{
+       width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.dessert{
+    display: flex;
+    flex-direction: row;
+}
+.dessert>.desserts1{
+    color: aliceblue;
+    padding-left: 100px;
+}
+.dessert>.desserts1>h3{
+    color: aqua;
+}
+.dessert>img{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.dessert1{
+    display: flex;
+    flex-direction: row;
+}
+.dessert1>.desserts2>h3{
+    color: aqua;
+    padding-left: 90px;
+}
+.dessert1>.desserts2>p{
+    color: aliceblue;
+    padding-left: 100px;
+}
+.dessert1>img{
+      width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.dessert2{
+    display: flex;
+    flex-direction: row;
+}
+.dessert2>.desserts3>h3{
+    color: aqua;
+    padding-left: 90px;
+}
+.dessert2>.desserts3>p{
+    color: aliceblue;
+    padding-left: 100px;
+}
+.dessert2>img{
+  width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;   
+}
+.gallery p{
+    color: aliceblue;
+    padding:10px 200px;
+}
+.Contact h1{
+    padding-left: 0px;
+    display: inline-block;
+}
+.Contact h3{
+    padding: 10px;
+    color: blueviolet;
+}
+.Contact p{
+    padding: 10px;
+    color: azure;
+}
+.Contact #slk{
+    font-size: xx-large;
+    color: rgb(226, 43, 55);
+}
+#feedback{
+    padding:0 400px ;
+}
+#feedback h3{
+    color: rgb(183, 42, 127);
+}
+#feedback label{
+    color: bisque;
+}
+#feedback button{
+    background-color: #04bfe0;
+}
+#feedback>input>#box2{
+    height: 400px;
+    width: 400px;
+}
+#feedback>label>#box{
+    padding: 0 400px;
+}
+#feedback>form>#box2{
+    background-color: bisque;
+    width: 400px;
+    height: 100px;
+}
