@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Ethiopia</title>
+  <style>
+        *{
+        box-sizing:border-box ;
+    }
+  body{
+        background: url('About-images/background.jpg') no-repeat fixed center/cover;
+      margin: 0px;
+  }
+  #header-container{
+    display:flex;
+    height:90px;
+    background-color: #E7DEB7;
+    width:100%;
+    border-top: 5px solid #B33B2D;
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    gap:520px;
+    z-index: 10000;
+  }
+  #logo-img{
+    width: 100px;
+    height:60px;
+    border:2px solid red; 
+    border-radius:20px ;
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+  .nav-text{
+      font-size: 24px;
+      font-style: italic;
+      font-family: Abee;
+      display: flex;
+      gap: 20px;
+      animation: "m" 2s forwards;
+  }
+  @keyframes m{
+    0%{
+      margin-top:-100px;
+    }
+   50%{
+    margin-top: 0px;
+   }
+   100%{
+    margin-top: 5px;
+   }
+  }
+  .nav-links{
+    color: #d97b23;
+    margin-top: 25px;
+      text-decoration: none;
+  }
+  #brand{
+    display: flex;
+    gap:4px;
+    margin:10px 20px;
+    font-size: 20px;
+    color: #B33B2D;
+  }
+  #brand-title{
+    margin-top: 10px;
+    font-style: italic;
+  }
+#A{
+    background-image: url('Menu-images/menu-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size:contain;
+    margin-top:91px;
+    margin-bottom: 0px;
+   position: relative;
+   height: 150px;
+}
+#A::before{
+    content:"";
+   background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+}
+#A h1{
+    color: white;
+    text-align: center;
+}
+#A p{
+    margin: 0;
+    text-align: center;
+    color: #d6b5b5;
+}
+#A *{
+    z-index: 2;
+    position: relative;
+}
+footer{
+  margin:30px 0px;
+  text-align: center;
+  color: #E7DEB7;
+}
+.selection{
+    display: flex;
+    gap: 40px;
+    font-size: 14px;
+    font-weight: bolder;  
+    margin: 10px 200px;
+}
+.selection a{
+    text-decoration: 0;
+     color:#E7DEB7;
+     font-size: 30px;
+}
+#J{
+    border: 2px solid #E7DEB7;
+}
+#J h1{
+    font-size: 30px;
+    text-align: center;
+    color:#E7DEB7;
+}
+#J h2{
+    font-size: 20px;
+    padding:5px 50px;
+    color:#E7DEB7;
+}
+.container2{
+    display:flex;
+    gap:10px;
+    margin: 10px 30px;
+    width: 100%;
+}
+.S{
+    border: 2px solid #EA9114;
+    width: 350px;
+    height:300px;
+    border-radius: 10px;
+    overflow: hidden;
+  font-size: small;
+  transition: all 2s;
+}
+.S h1{
+    font-size: 70px;
+}
+.S:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgb(238, 235, 235);
+}
+.conts{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+}
+.container2 img{
+    width:100%;
+    height: 180px;
+    overflow: none;
+}
+#price{
+    padding:10px,0px;
+}
+.container3{
+    display:grid;
+    grid-template-columns: 470px 470px 470px;
+    gap:10px;
+    margin: 10px 30px;
+    width: 100%;
+   height: 300px;
+}
+.container3 img{
+      width:100%;
+      height: 180px;
+}
+.T{
+    border: 2px solid #EA9114;
+ overflow: hidden;
+ border-radius: 10px;
+ transition: all 2s;
+}
+.T:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgb(238, 235, 235);
+}
+.L{
+    font-size: 20px;
+    color:#E7DEB7;
+    padding: 5px 50px;
+    font-weight: bolder;
+}
+footer{
+    font-size: 20px;
+}
+ @media (max-width: 600px) {
+ #header-container{
+    display:flex;
+    height:62px;
+    background-color:#E7DEB7;
+    width:100%;
+    border-top:5px solid #B33B2D;
+    position:fixed;
+    top:0;
+    gap:5px;
+    z-index:1000;
+}
+  #logo-img{
+    width: 71px;
+    height:42px;
+    border:2px solid red; 
+    border-radius:20px ;
+  }
+  .nav-text{
+      font-size: 12px;
+      font-style: italic;
+      font-family: Abee;
+      display: flex;
+      gap: 10px;        
+      animation: "m" 3s forwards;
+  }
+  @keyframes m{
+    0%{
+      margin-top:-100px;
+    }
+   50%{
+    margin-top: 0px;
+   }
+   100%{
+    margin-top: 1px;
+   }
+  }
+  .nav-links{
+    color: #d97b23;
+    margin-top: 25px;
+      text-decoration: none;
+  }
+  .nav-links:hover{
+      color:#721a10;
+  }
+    #brand{
+    display: flex;
+    gap:4px;
+    margin:10px 20px;
+    font-size: 9px;
+    color: #B33B2D;
+  }
+  #brand-title{
+    margin-top: 10px;
+    font-style: italic;
+  }
+#header1{
+    margin-top:90px;
+    margin-bottom: 20px;
+}
+.header{
+    font-size: 15px;
+    text-align: center;
+    color: #E7DEB7;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container{
+    display:grid;
+    grid-template-columns: 138px 300px;
+    column-gap: 20px;
+    row-gap: 10px;
+    margin-left: 20px;
+}
+.container img{
+    width:150px;
+    height:210px;
+    align-self: center;
+    border:2px solid #E7DEB7;
+    border-radius: 8px;
+}
+.color{
+    background-color: #E7DEB7;
+    color: rgb(59, 58, 58);
+    font-size: 8px;
+    font-style: italic;
+    font-weight:100;
+    padding:2px 10px;
+    border-radius: 10px;
+    height:250px;
+}
+#scene{
+    color: #E7DEB7;
+    font-size: 10px;
+    text-align: center;
+    margin: 15px 0px;
+}
+.image-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0px 20px;
+    gap:10px;
+}
+.image-container img{
+            border: 1px solid black;
+            width:100%;
+            height:110px;
+            border:1px solid #E7DEB7;
+}
+#A{
+    background-image: url('Menu-images/menu-back.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    background-size:contain;
+    margin-top:60px;
+    margin-bottom: 0px;
+   position: relative;
+    height: 120px;
+}
+#A::before{
+    content:"";
+   background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+#A h1{
+    color: white;
+    text-align: center;
+}
+#A p{
+    margin: 0;
+    text-align: center;
+    color: #d6b5b5;
+}
+#A *{
+    z-index: 2;
+    position: relative;
+}
+footer{
+  margin:30px 0px;
+  text-align: center;
+  color: #E7DEB7;
+}
+.selection{
+    display: flex;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: bolder;  
+    margin: 10px 9px;
+}
+.selection a{
+    text-decoration: 0;
+     color:#E7DEB7; 
+     font-size: 15px;
+}
+#J{
+    border: 2px solid #E7DEB7;
+}
+#J h1{
+    font-size: 20px;
+    text-align: center;
+    color:#E7DEB7;
+}
+#J h2{
+    font-size: 20px;
+    padding:5px 20px;
+    color:#E7DEB7;
+}
+.container2{
+    display:flex;
+    gap:10px;
+    margin: 10px 6px;
+    width: 100%;
+}
+.S{
+    border: 2px solid #EA9114;
+    width: 110px;
+    height:195px;
+    border-radius: 10px;
+    overflow: hidden;
+  font-size: small;
+  transition: all 2s;
+}
+.S:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgb(238, 235, 235);
+}
+.conts{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+
+}
+.container2 img{
+    width:110px;
+    height: 80px;
+    overflow: none;
+}
+#price{
+    padding:10px,0px;
+}
+.container3{
+    display:grid;
+    grid-template-columns: 147px 151px 150px;
+    gap:10px;
+     margin: 10px 6px;
+    width: 100%;
+   height: 190px;
+}
+.container3 img{
+      width:151px;
+      height: 80px;
+}
+.T{
+    border: 2px solid #EA9114;
+ overflow: hidden;
+ border-radius: 10px;
+ transition: all 2s;
+}
+.T:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 0 10px rgb(238, 235, 235);
+}
+.L{
+    font-size: 20px;
+    color:#E7DEB7;
+    padding: 5px 20px;
+    font-weight: bolder;
+}
+ }
+  </style>
+</head>
+<body>
+    <main>
+    <header>
+    <header id="header-container" >
+        <nav id="brand">
+            <img id="logo-img"  src="home-images/logofood.jpg">
+            <h1 id="brand-title">Taste of Ethiopia</h1>
+        </nav>
+        <div class="nav-text">
+            <a class="nav-links" href="home.html">Home</a>
+            <a class="nav-links" href="about.html">About</a>
+            <a class="nav-links" href="menu.html">Menu</a>
+            <a class="nav-links" href="gallery.html">Gallery</a>
+            <a class="nav-links" href="contact.html">contact</a>
+            <a class="nav-links" href="order.html">Order</a>
+              </div>
+        </header>
+        <div id="A">
+            <h1>OUR MENU</h1>
+            <div>
+                <p>Discover the rich and authentic flavors of Ethiopian cuisine. Our menu </p>
+                <p>offers traditional non-fasting dishes, flavorful vegetarian meals, delicious </p>
+                <P>desserts, and classic Ethiopian drinks prepared with care.</P>
+            </div>
+        </div>
+        <section class="selection">
+            <a href="#L">🍖 Non-Fasting Dishes  </a>
+            <a href="#fasting">🌱 Fasting / Vegetarian </a>
+            <a href="#deserts">🍮 Desserts </a>
+            <a href="#Drinks">☕ Drinks</a>
+        </section>
+        <section id="J">
+               <h1 id="L">🍖 Non-Fasting Section</h1>
+               <h2>Main Dish</h2>
+            <section>
+               <div class="container2">
+                <div class="S">
+                    <img src="Menu-images\dorowot.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Doro Wot</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal;">Main Ingredient:
+                     Spicy chicken stew with berbere sauce</h1>
+                    <h1 id="Price"style="font-size:6px; padding:10px 0px;">Price-320 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 20px 25px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                    <img src="Menu-images\kitfo.jpg">
+                    <h1 style="font-size:11px"> Dish Name-: Kitfo</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px; font-weight: normal;">Main Ingredient:
+ Finely minced beef mixed with spiced butter and mitmita</h1>
+                    <h1 style="font-size:6px; padding:14px 0px;">Price- 350 ETB</h1>
+                    </div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin: 10px 25px; font-size:10.5px; border:none; border-radius: 10px;"  type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                      <img src="Menu-images\tibs1.jpg">
+                    <h1 style="font-size:11px" class="U"> Dish Name-Tibs </h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px; font-weight: normal;">Main Ingredient:
+Sautéed beef with onions, peppers, and spices</h1>
+                    <h1 style="font-size:6px; padding:14px 0px;">Price- 300 ETB</h1></div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin:11px 25px; font-size:10.5px; border:none; border-radius: 10px;"  type="button">Order Me</button>
+                </div>
+                <div  id="deserts" class="S">
+                      <img src="Menu-images\genfo.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Genfo </h1>
+                     <div class="conts">
+                    <h1  style="font-size:8px; font-weight: normal;">Main Ingredient:
+Cubed raw beef lightly spiced, served with dipping sauces</h1>
+                    <h1 style="font-size:6px; padding:14px 0px;">Price-  330 ETB</h1>
+                    </div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin: 2px 25px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+               </div>
+
+               <div class="L">Desert</div>
+               <div class="container3">
+                <div class="T">
+                    <img src="Menu-images\checko.jpg">
+                    <h1 style="font-size:11px">  Dish Name-Cheko</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal; padding-left: 2px;">Main Ingredient:
+Roasted barley flour (Besu) mixed with spiced butter</h1>
+                    <h1 id="Price"style="font-size:7.5px; padding:10px 0px;">Price-150 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 10px 40px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                     <div class="T">
+                    <img src="Menu-images\baklava.jpg">
+                    <h1 style="font-size:11px">  Dish Name-Baklava</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal;">Main Ingredient:
+Layered pastry with butter and nuts, soaked in sweet syrup.</h1>
+                    <h1 id="Price"style="font-size:7.5px; padding:10px 0px;">Price-170 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 10px 40px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                     <div class="T">
+                    <img src="Menu-images\atyef.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Atayef</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal;">Main Ingredient:
+Small sweet filled pancakes, lightly soaked in syrup</h1>
+                    <h1 id="Price"style="font-size:7.5px; padding:10px 0px;">Price-150 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 10px 40px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+               </div>
+               <div id="fasting"style="text-align: center; color: #E7DEB7; font-size: large; margin: 10px,0px;">🥬 Vegetarian / Fasting Main Selection</div>
+               <div class="L">Main Dish</div>
+
+               <div class="container2">
+                <div class="S">
+                    <img src="Menu-images\shiro.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Shiro</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal;">Main Ingredient:
+                     Chickpea flour stew cooked with onions, garlic, and Ethiopian spices</h1>
+                    <h1 id="Price"style="font-size:6px; padding:20px 0px;">Price-250 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 4px 25px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                    <img src="Menu-images\misir.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Misir Wot</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px; font-weight: normal; padding-left: 1px;">Main Ingredient:
+Red lentils cooked with onions, garlic, tomato, and berbere spice</h1>
+                    <h1 style="font-size:6px; padding:19px 0px;">Price- 240 ETB</h1>
+                    </div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin: 4px 25px; font-size:10.5px; border:none; border-radius: 10px;"  type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                      <img src="Menu-images\kikalicha.jpg">
+                    <h1 style="font-size:11px" class="U"> Dish Name-Kik Alicha </h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px; font-weight: normal; padding-left: 1px;">Main Ingredient:
+Mild yellow split peas stew with onions and garlic</h1>
+                    <h1 style="font-size:6px; padding:16px 0px;">Price- 200 ETB</h1></div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin:11px 25px; font-size:10.5px; border:none; border-radius: 10px;"  type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                      <img src="Menu-images\suf.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Suf </h1>
+                     <div class="conts">
+                    <h1  style="font-size:8px; font-weight: normal; padding-left: 1px;">Main Ingredient:
+Traditional Ethiopian fava bean stew cooked with spices</h1>
+                    <h1 style="font-size:6px; padding:14px 0px;">Price-  330 ETB</h1>
+                    </div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin: 2px 25px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+               </div>
+      <div class="L">Desserts</div>
+              <div class="container3">
+                <div class="T">
+                    <img src="Menu-images\mushebek.jpg">
+                    <h1 style="font-size:11px">  Dish Name-Mushebk</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal; padding-left: 2px;">Main Ingredient:
+Crispy fried dough shaped in rings and soaked in sweet syrup.</h1>
+                    <h1 id="Price"style="font-size:7.5px; padding:10px 0px;">Price-130 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 4px 40px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                     <div class="T">
+                    <img src="Menu-images\sambusa.jpg">
+                    <h1 style="font-size:11px">  Dish Name-Sweet Sambusa</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal;">Main Ingredient:
+Fried pastry filled with sweet dates or sugar and spices..</h1>
+                    <h1 id="Price"style="font-size:7.5px; padding:10px 0px;">Price-130 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 10px 40px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                     <div class="T">
+                    <img src="Menu-images\beso.jpg">
+                    <h1 style="font-size:11px"> Dish Name-Beso</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal;">Main Ingredient:
+Traditional roasted barley snack.</h1>
+                    <h1 id="Price"style="font-size:7.5px; padding:10px 0px;">Price-110 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 10px 40px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+               </div>
+                <div style="text-align: center; color: #E7DEB7; font-size: large; margin: 10px,0px;">☕ Drinks Section</div>
+                   <div id="Drinks" class="container2">
+                <div class="S">
+                    <img src="Menu-images\coffe.jpg">
+                    <h1 style="font-size:8px"> Drink Name-Ethiopian Coffee</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px ; font-weight: normal; margin: 10px 1px;">Ingredient:
+                     Ethiopian coffee beans brewed in a traditional jebena.</h1>
+                    <h1 id="Price"style="font-size:7px; padding:17px 0px;">Price-50 ETB</h1>
+                    </div>
+                    <button style="text-align: center;  background-color: #FF0000; margin: 15px 25px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                    <img src="Menu-images\tej1.jpg">
+                    <h1 style="font-size:11px"> Drink Name- Tej</h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px; font-weight: normal;">Ingredient:
+ Traditional Ethiopian honey wine fermented with gesho.</h1>
+                    <h1 style="font-size:6.5px; padding:14px 0px;">Price- 150 ETB</h1>
+                    </div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin: 7px 25px; font-size:10.5px; border:none; border-radius: 10px;"  type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                      <img src="Menu-images\areke.jpg">
+                    <h1 style="font-size:11px" class="U"> Drink Name-Areke </h1>
+                    <div class="conts">
+                    <h1 style="font-size:8px; font-weight: normal;"> Ingredient:Traditional Ethiopian distilled spirit made from grains.</h1>
+                    <h1 style="font-size:5.5px; padding:14px 0px;">Price- 180 ETB</h1></div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin:17px 25px; font-size:10.5px; border:none; border-radius: 10px;"  type="button">Order Me</button>
+                </div>
+                <div  class="S">
+                      <img src="Menu-images\tela.jpg">
+                    <h1 style="font-size:11px"> Drink Name-Tela </h1>
+                     <div class="conts">
+                    <h1  style="font-size:8px; font-weight: normal;">Ingredient:
+ Traditional Ethiopian homemade beer brewed with barley and gesho.</h1>
+                    <h1 style="font-size:6px; padding:14px 0px;">Price-  140 ETB</h1>
+                    </div>
+                    <button  style="text-align: center;  background-color: #FF0000; margin: 0px 25px; font-size:10.5px; border:none; border-radius: 10px;" type="button">Order Me</button>
+                </div>
+               </div>
+        </section>
+       </main>
+<footer>@2026 Taste of Ethiopia  \  Addis Abeba, Ethiopia</footer>
+</body>
+</html>

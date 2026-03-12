@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Ethiopa</title>
+  <style>
+  *{
+    box-sizing: border-box;
+    margin: 0px;
+  }
+  body{
+        background: url('About-images/background.jpg') no-repeat fixed center/cover;
+  }
+  #header-container{
+    display:flex;
+    height:90px;
+    background-color: #E7DEB7;
+    width:100%;
+    border-top: 5px solid #B33B2D;
+    position: fixed;
+    top:0px;
+    bottom: 0px;
+    gap:520px;
+    z-index: 1000;
+  }
+  #logo-img{
+    width: 100px;
+    height:60px;
+    border:2px solid red; 
+    border-radius:20px ;
+    margin-left: 60px;
+    margin-top: 0px;
+  }
+  .nav-text{
+      font-size: 24px;
+      font-style: italic;
+      font-family: Abee;
+      display: flex;
+      gap: 20px;
+      animation: "m" 2s forwards;
+  }
+  @keyframes m{
+    0%{
+      margin-top:-100px;
+    }
+   50%{
+    margin-top: 0px;
+   }
+   100%{
+    margin-top: 5px;
+   }
+  }
+  .nav-links{
+    color: #d97b23;
+    margin-top: 25px;
+      text-decoration: none;
+  }
+  #brand{
+    display: flex;
+    gap:4px;
+    margin:10px 20px;
+    font-size: 20px;
+    color: #B33B2D;
+  }
+  #brand-title{
+    margin-top: 10px;
+    font-style: italic;
+  }
+    .title{
+    margin-top: 120px;
+     margin-left: 20px;
+      margin-right: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    margin: 20px 20px;
+  }
+  .container .contact{
+    background-color: #edede9;
+    border-radius: 10px;
+  }
+  .contact input{
+    background-color: #E7DEB7;
+    border:none;
+    border-radius: 10px;
+    transition: all 2s;
+  }
+  .contact input:hover{
+    box-shadow: 0 0 10px 3px  #d10426;
+    background-color: #edede9;
+  }
+  .contact textarea{
+    background-color: #E7DEB7;
+  
+  }
+  .p{
+    padding: 6px 10px;
+  }
+  .contact button{
+    background-color:#E7DEB7 ;
+    height: 30px;
+    width: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    margin: 10px 65px;
+  }
+  .dish{
+    background-color: #E7DEB7;
+    padding:20px 20px;
+  }
+  footer{
+  margin:30px 0px;
+  text-align: center;
+  color: #E7DEB7;
+}
+ @media (max-width: 600px) {
+   #header-container{
+    display:flex;
+    height:62px;
+    background-color:#E7DEB7;
+    width:100%;
+    border-top:5px solid #B33B2D;
+    position:fixed;
+    top:0;
+    gap:5px;
+    z-index:1000;
+}
+  #logo-img{
+    width: 71px;
+    height:42px;
+    border:2px solid red; 
+    border-radius:20px ;
+  }
+  .nav-text{
+      font-size: 12px;
+      font-style: italic;
+      font-family: Abee;
+      display: flex;
+      gap: 10px;        
+      animation: "m" 3s forwards;
+  }
+  @keyframes m{
+    0%{
+      margin-top:-100px;
+    }
+   50%{
+    margin-top: 0px;
+   }
+   100%{
+    margin-top: 1px;
+   }
+  }
+  .nav-links{
+    color: #d97b23;
+    margin-top: 25px;
+      text-decoration: none;
+  }
+  .nav-links:hover{
+      color:#721a10;
+  }
+    #brand{
+    display: flex;
+    gap:4px;
+    margin:10px 20px;
+    font-size: 9px;
+    color: #B33B2D;
+  }
+  #brand-title{
+    margin-top: 10px;
+    font-style: italic;
+  }
+  .title{
+    margin-top: 90px;
+     margin-left: 20px;
+      margin-right: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    text-align: center;
+  }
+  .container{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    margin: 10px 20px;
+  }
+  .container .contact{
+    background-color: #edede9;
+    border-radius: 10px;
+  }
+  .contact input{
+    background-color: #E7DEB7;
+    border:none;
+    border-radius: 10px;
+    transition: all 2s;
+  }
+  .contact input:hover{
+    box-shadow: 0 0 10px 3px  #d10426;
+    background-color: #edede9;
+  }
+  .contact textarea{
+    background-color: #E7DEB7;
+  
+  }
+  .p{
+    padding: 6px 10px;
+  }
+  .contact button{
+    background-color:#E7DEB7 ;
+    height: 30px;
+    width: 100px;
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    margin: 10px 65px;
+  }
+  .dish{
+    background-color: #E7DEB7;
+    padding:20px 20px;
+  }
+  footer{
+  margin:30px 0px;
+  text-align: center;
+  color: #E7DEB7;
+}
+}
+</style>
+</head>
+<body>
+    <main>
+    <header>
+    <header id="header-container" >
+        <nav id="brand">
+            <img id="logo-img"  src="home-images/logofood.jpg">
+            <h1 id="brand-title">Taste of Ethiopia</h1>
+        </nav>
+        <div class="nav-text">
+            <a class="nav-links" href="home.html">Home</a>
+            <a class="nav-links" href="about.html">About</a>
+            <a class="nav-links" href="menu.html">Menu</a>
+            <a class="nav-links" href="gallery.html">Gallery</a>
+            <a class="nav-links" href="contact.html">contact</a>
+            <a class="nav-links" href="order.html">Order</a>
+              </div>
+        </header>
+        <div class="title">Enjoy our authentic Ethiopian dishes from the comfort of your home.</div>
+        <section  class="container">
+            <div class="contact">
+                <p class="p">Order Form</p>
+                <form class="p">
+                    <label for="Name">Name</label><br>
+                     <input   style="height:30px" placeholder="Enter your name" type="text"><br>
+                     <label for="email">Email</label><br>
+                     <input  style="height:30px"  type="text"><br>
+                     <label for="number">Phone Number </label><br>
+                     <input  style="height:30px"  type="number"><br><br>
+                     <label for="delivery">Delivery Option</label><br><br>
+                       <input type="radio" name="option">
+                     <label for="pickup">Pickup</label><br>
+                      <input type="radio" name="option">
+                     <label for="delivery">Delivery</label><br><br>
+                     <label for="adress">Address</label><br><br>
+                     <textarea placeholder="Enter your adress here" name="adress" rows="5" cols="30"></textarea><br><br>
+                     <button type="button">Order</button>
+                </form>
+            </div>
+            <div class="dish">
+              <form>
+              <label for="choose">Choose Your Dish</label><br>
+              <input type="checkbox">
+              <label for="choose">Fasting</label><br>
+              <input type="checkbox">
+              <label for="choose">Non Fasting</label><br>
+              <input type="checkbox">
+              <label for="choose">Desserts</label><br>
+              <input type="checkbox">
+              <label for="choose">Drinks</label>
+              </form><br>
+                 <p>Quantity</p><br>
+            <textarea name="quantity" rows="6" cols="18"></textarea>
+            </div>
+        </section>
+    </main>
+<footer>@2026 Taste of Ethiopia  \  Addis Abeba, Ethiopia</footer>
+</body>
+</html>
