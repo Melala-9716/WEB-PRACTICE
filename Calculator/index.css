@@ -39,6 +39,9 @@
             font-size: 50px;
             box-shadow:5px 5px 10px rgb(239, 13, 88);
         }
+        .buttons:hover{
+            background: hsl(0, 0%, 100%,0.4);
+        }
         .colours{
             background-color: bisque;
                height: 100px;
@@ -50,6 +53,9 @@
             font-size: 50px;
             color: palevioletred;
             box-shadow:3px 3px 10px bisque;
+        }
+        .colours:hover{
+            background-color: hsl(33, 100%, 88%,0.8);
         }
          @media (max-width: 1024px) {
             #container{
