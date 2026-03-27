@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+    button{
+       background-color: hsl(241, 100%, 80%);
+       width:150px;
+       height: 150px;
+       font-size: 100px;
+       border-radius: 150px;
+       border: 3px solid white;
+    }
+    button:hover{
+        background-color: hsl(241, 100%, 80%,0.9);
+    }
+    #container{
+        display: flex;
+        justify-content: center;
+        gap:10px;
+    }
+    #playerdisplay{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        margin: 0%;
+    }
+    #Computerdisplay{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        margin: 0%;
+    }
+    #result{
+        font-size: 80px;
+        padding-top: 20px;
+        font-weight: bolder;
+        font-style: italic;
+        text-align: center;
+    }
+    #playerscore,#computerscore{
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    #playerscorenumbers{
+        color: green;
+    }
+    #computerscorenumbers{
+        color: red;
+    }
